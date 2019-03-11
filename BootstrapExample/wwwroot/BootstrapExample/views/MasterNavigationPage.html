@@ -1,0 +1,22 @@
+﻿<template>
+    <dom-bind>
+        <template is="dom-bind">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand">Hello world!</a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Item 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Item 2</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="container mt-3">
+                <starcounter-include view-model="{{model.InnerJson}}"></starcounter-include>
+            </div>
+        </template>
+    </dom-bind>
+</template>

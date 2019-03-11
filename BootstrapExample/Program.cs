@@ -7,7 +7,7 @@ namespace BootstrapExample
     {
         static void Main()
         {
-
+            CustomAppShellBootstrapper.Start(new Startup());
         }
     }
 }

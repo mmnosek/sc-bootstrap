@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>{0}</title>
+
+    <script src="/sys/webcomponentsjs/webcomponents-lite.js"></script>
+    <link rel="import" href="/sys/polymer/polymer.html">
+    <link rel="import" href="/sys/starcounter.html">
+    <link rel="stylesheet" href="/sys/bootstrap-4.2.1-dist/css/bootstrap.min.css">
+    <link href="/sys/open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+    <link rel="manifest">
+
+</head>
+<body>
+    <dom-bind id="palindrom-root">
+        <template>
+            <starcounter-include view-model="{{{{model}}}}"></starcounter-include>
+            <link rel="import" href="/sys/palindrom-error-catcher/palindrom-error-catcher.html" />
+            <palindrom-error-catcher></palindrom-error-catcher>
+        </template>
+    </dom-bind>
+
+    <palindrom-client ref="palindrom-root" remote-url="{1}"></palindrom-client>
+</body>
+</html>
